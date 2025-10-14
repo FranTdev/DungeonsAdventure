@@ -1,7 +1,7 @@
-using DungeosAdventure.Interfaces;
+using DungeonsAdventure.Interfaces;
 using System;
 
-namespace DungeosAdventure.Models
+namespace DungeonsAdventure.Models
 {
     public class Chest : IInteractive
     {
