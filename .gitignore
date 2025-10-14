@@ -1,0 +1,15 @@
+# Archivos y carpetas específicos del sistema operativo
+*.swp
+*~
+.DS_Store
+
+# Carpetas de compilación de .NET
+[Bb]in/
+[Oo]bj/
+
+# Archivos específicos de IDEs (Visual Studio, VS Code, Rider)
+.vs/
+.vscode/
+*.suo
+*.user
+*.sln.docstates
