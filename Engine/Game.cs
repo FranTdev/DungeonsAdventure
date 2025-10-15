@@ -1,5 +1,6 @@
 using DungeonsAdventure.Models;
 using DungeonsAdventure.Interfaces;
+using DungeonsAdventure.Factories;
 using System;
 using System.Collections.Generic;
 
@@ -11,21 +12,9 @@ namespace DungeonsAdventure.Engine
 
         public Game()
         {
-            // Initialize rooms
-            var entrance = new Room("Entrance Hall", "A large, dusty hall with a single torch.");
-            var armory = new Room("Armory", "A small room filled with rusty weapons. ");
+            Room startingRoom = WorldFactory.CreateWorld(); // Create the game world
 
-            // The north exit from Entrance Hall leads to Armory
-            entrance.Exits.Add("north", armory);
-            // The south exit from Armory leads back to Entrance Hall
-            armory.Exits.Add("south", entrance);
-
-            // Create the items in the rooms
-            entrance.Interactives.Add(new Door());
-            armory.Interactives.Add(new Chest());
-            armory.Interactives.Add(new Enemy());
-
-            _player = new Player("Hero", entrance); // Initialize player in the entrance hall
+            _player = new Player("Hero", startingRoom); // Initialize player in the entrance hall
 
         }
 
