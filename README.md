@@ -10,7 +10,7 @@ DungeonsAdventure is a console-based text RPG engine written in C#. This project
 To run this project, you need the .NET SDK installed.
 
 1.  Clone the repository:
-    `git clone <tu-url-de-github-aqui>`
+    `(https://github.com/FranTdev/DungeonsAdventure.git)`
 2.  Navigate to the project directory:
     `cd DungeonsAdventure`
 3.  Run the application:
